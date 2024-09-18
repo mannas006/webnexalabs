@@ -2,8 +2,8 @@
 
 A simple landing page for a digital agency
 
-![AgenceX light Theme](./screens/demoLight.webp)
-![AgenceX Dark Theme](./screens/demoDark.webp)
+![AgenceX light Theme](./screens/demoLight.png)
+![AgenceX Dark Theme](./screens/demoDark.png)
 
 
 ## Tools
