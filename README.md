@@ -2,8 +2,8 @@
 
 A simple landing page for a digital agency
 
-![AgenceX light Theme](./screens/demoLight.png)
-![AgenceX Dark Theme](./screens/demoDark.png)
+![WebNexaLab light Theme](./screens/demoLight.png)
+![WebNexaLab Dark Theme](./screens/demoDark.png)
 
 
 ## Tools
