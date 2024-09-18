@@ -1,0 +1,79 @@
+---
+import Button from "../components/shared/Button.astro";
+import Container from "../components/shared/Container.astro";
+import Paragraph from "../components/shared/Paragraph.astro";
+---
+
+<section id="contact" class="pb-20">
+  <Container>
+    <div class="w-full relative py-8 md:py-10 px-6 md:px-8 rounded-2xl bg-gradient-to-tr from-gray-100 to-gray-200 dark:from-gray-900">
+      
+      <div class="absolute right-0 top-0 h-full w-full flex justify-end">
+        <div class="w-28 h-28 overflow-auto flex rounded-xl relative blur-2xl">
+          <span class="absolute w-16 h-16 -top-1 -right-1 bg-green-500 rounded-md rotate-45"></span>
+          <span class="absolute w-16 h-16 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45"></span>
+          <span class="absolute w-16 h-16 -bottom-1 -left-1 bg-primary rounded-md rotate-45"></span>
+        </div>
+      </div>
+
+      <div class="absolute left-0 bottom-0 h-full w-full flex items-end">
+        <div class="w-28 h-28 overflow-auto flex rounded-xl relative blur-2xl">
+          <span class="absolute w-16 h-16 -top-1 -right-1 bg-green-500 rounded-md rotate-45"></span>
+          <span class="absolute w-16 h-16 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45"></span>
+          <span class="absolute w-16 h-16 -bottom-1 -left-1 bg-primary rounded-md rotate-45"></span>
+        </div>
+      </div>
+
+      <div class="mx-auto text-center max-w-xl md:max-w-2xl relative">
+        <h1 class="text-3xl/tight sm:text-4xl/tight md:text-5xl/tight font-bold text-heading-1">
+          Contact Us <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">for Your Next Project</span>
+        </h1>
+        <Paragraph className="pt-10">
+          We are here to help you with any questions or project inquiries. Please fill out the form below or reach out to us directly.
+        </Paragraph>
+        
+        <div class="mx-auto max-w-md sm:max-w-xl pt-10">
+          <form 
+            action="https://formspree.io/f/mvgpjogg" 
+            method="POST" 
+            class="space-y-6"
+          >
+            <div>
+              <label for="name" class="block text-left text-lg font-medium text-gray-700">Name</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50" 
+                required
+              />
+            </div>
+            <div>
+              <label for="email" class="block text-left text-lg font-medium text-gray-700">Email</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50" 
+                required
+              />
+            </div>
+            <div>
+              <label for="message" class="block text-left text-lg font-medium text-gray-700">Message</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                rows="4" 
+                class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50" 
+                required
+              ></textarea>
+            </div>
+            <Button variant={"primary"}>
+              <span class="text-white relative z-[5]">Send Message</span>
+            </Button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </Container>
+</section>
