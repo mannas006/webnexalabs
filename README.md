@@ -1,6 +1,6 @@
 <h1>WebNexaLabs Landing page</h1>
 
-A simple landing page for a digital agency
+At WebNexaLabs, we transform ideas into powerful digital solutions. Whether you need custom software, a stunning website, or a mobile app, our expert team delivers cutting-edge technology tailored to your business needs. Let's build the future together!
 
 ![WebNexaLab light Theme](./screens/demoLight.png)
 ![WebNexaLab Dark Theme](./screens/demoDark.png)
